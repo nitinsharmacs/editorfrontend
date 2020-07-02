@@ -1,38 +1,69 @@
 .App {
-  text-align: center;
+ 	position:fixed;display: flex;flex-flow: column;align-items: center;width: 100%;height: 100%;overflow-y:auto;padding-bottom:100px;
+}
+button{
+	cursor: pointer;
+}
+.Heading{
+	margin:0;font-weight: 500;margin-top:10px;
+}
+.Header{
+	width:90%;display: flex;margin:10px 0px;margin-top:5vh;
+}	
+.Language {
+	flex:0.5;padding:10px;font-size: 1rem;border:2px solid #4daaf5;border-radius: 5px;background: none;
+}
+.Checkbox{
+	background:;flex:0.5;display: flex;align-items: center;justify-content: flex-end;
+}
+.Checkbox input {
+	height:20px;width:20px;font-size: 1rem;
+}
+.Controls{
+	width:90%;margin:20px 0px;
+}
+.runBtn {
+	border:none;padding:10px 20px;font-size:1rem;color:white;background:#4daaf5;border-radius:5px;
+}
+.runBtn:disabled{
+	background:lightgrey;cursor:not-allowed;
+}
+.spin{
+	animation:spin 0.5s infinite linear;margin-right:5px;
+}
+@media screen and (min-width:1300px){
+	.App{
+		position:relative;width:1200px;margin:auto;background:white;margin-top:5vh;border-radius: 5px;box-shadow:0px 0px 9px 2px #d2b9b9;
+	}
+}
+@media screen and (min-width:750px){
+	.App{
+		margin-top:5vh;
+	}
+}
+@media screen and (max-width:750px){
+	.App{
+		background:#232323;color:white;
+	}
+	.Heading{
+		font-size:1.2rem;
+	}
+	.Language{
+		color:white;font-weight: bold;
+	}
+	.Language option{
+		color:black;
+	}
+	.runBtn:disabled{
+		color:grey;
+	}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(359deg);
+	}
 }

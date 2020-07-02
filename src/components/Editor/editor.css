@@ -1,0 +1,164 @@
+.EditorArea{
+	height:500px;overflow-y:auto;width:90%;border:2px solid #4daaf5;border-radius: 5px;background: white;color:black;
+}
+
+.Editor {
+	position:relative;background:transparent;width:100%;overflow:hidden;border-radius:5px;box-sizing: border-box;padding:0;
+}
+
+/*.CodeInput{
+	position:absolute;border:none;resize: none;width:97.2%;height:100%;padding:10px;background:skyblue;border-radius: 5px;white-space: pre-wrap; word-break: keep-all; overflow-wrap: break-word;z-index: 1;color:transparent;top:0;left:0;
+}
+.CodeOutput{
+	position: absolute;width:100%;height:100%;overflow:hidden;overflow-y:auto;border-radius: 5px!important;background:transparent;top:0;left:0;
+}
+.Code {
+	position: absolute;width:100%;height:100%;overflow:hidden;overflow-y:auto;color:red!important;background:transparent;top:0;left:0;
+}*/
+
+/*.Editor {
+	position:relative;width:90%;min-height:500px;overflow:hidden;background: orange;
+}
+.Editor textarea{
+	width:100%;
+}
+*/
+
+/*.CodeInput,
+.CodeOutput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97.2%;
+  padding: 10px;
+  height:95.6%;
+  border: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.8rem;
+  white-space: pre-wrap!important;
+  line-height: 1.5em;
+  word-wrap: break-word!important;
+  font-size: 1rem;
+}*/
+
+.CodeInput {
+	border:none;outline: none;
+  margin: 0px;
+    border: 0px;display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    tab-size: inherit;
+    text-indent: inherit;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    position: absolute!important;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    overflow: hidden;caret-color:black;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: ;
+    padding: 10px;overflow:hidden;background:transparent!important;
+}
+
+.CodeOutput {background:transparent!important;
+  margin: 0px;
+    border: 0px;
+    background: none;
+    box-sizing: inherit;
+    display: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height:inherit;
+    tab-size: inherit;
+    text-indent: inherit;
+    text-rendering: inherit;
+    text-transform: inherit;
+    white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    position: relative!important;
+    pointer-events: none;
+    padding: 10px;overflow: hidden;
+
+}
+code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px!important;
+  display: block;
+  font-size: 0.8rem;
+  font-family: "PT Mono", monospace;
+  white-space: pre-wrap!important;
+  word-wrap: break-word!important;width:97.2%;
+  height: 95.8%;border-radius: 5px;
+  overflow-y:auto!important;background:transparent!important;
+}
+
+.tag:not(body) {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 0;
+  display: initial;
+  font-size: 1em;
+  height: 2em;
+  justify-content: center;
+  line-height: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  white-space: nowrap;
+}
+
+.number {
+  align-items: initial;
+  background-color: initial;
+  border-radius: initial;
+  display: initial;
+  font-size: 1rem;
+  height: initial;
+  justify-content: initial;
+  margin-right: initial;
+  min-width: initial;
+  padding: initial;
+  text-align: initial;
+  vertical-align: inherit;
+}
+
+/*.Editor :not(pre) > code[class*="language-"],
+.Editor pre[class*="language-"] {
+  background: transparent;
+  margin: 0;
+}
+
+
+@media screen and (max-width:750px){
+	.CodeInput,.CodeOutput {
+		width:89.5%!important;
+	}
+}
+*/
+
+/*width:97%;resize: none;min-height:500px;padding:10px;font-size:1.2rem;border-radius:5px;*/
+
+
+.Editor pre[class*="language-"] {
+  background: transparent;
+  margin: 0;padding:0;
+}
+
+@media screen and (max-width:750px){
+  
+}

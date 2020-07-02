@@ -1,0 +1,45 @@
+.Input {
+	padding:10px;background:white;border-radius: 5px;width:500px;height: 300px;display: flex;flex-flow: column;animation:come 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);overflow:hidden;box-shadow:0px 0px 18px -2px #423b3b;color:black;
+}
+.Input h3{
+	margin:5px;font-weight: 500;
+}
+.Input textarea{
+	resize: none;overflow:hidden;flex:1;padding:10px;overflow-y:auto;font-size: 1.1rem;
+}
+.Input button{
+	margin-top:5px;padding:10px 20px;font-size: 1rem;display: flex;align-items: center;justify-content: center;border:none;background: linear-gradient(to bottom, #ef9191, red);color:white;font-weight: bold;transition:0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);border-radius: 5px;
+}
+.Input button[for=done]{
+	background: linear-gradient(to bottom, #c5e070, #6b8637);
+}
+.Input button:hover, .Input button:active{
+	transform:scale(0.98, 0.98);
+}
+.Input button svg{
+	margin-right:5px;
+}
+.Output{
+	flex:1;background:transparent;padding:5px;box-shadow:0px 0px 2px black;border-radius:5px;overflow-y:auto;
+}
+.Output pre{
+	width:100%;overflow:hidden;overflow-y:auto; white-space: pre-wrap;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+@media screen and (max-width:750px){
+	.Input{
+		width:90%;
+	}
+}
+@keyframes come{
+	0%{
+		opacity:0.5;transform:translateY(100px) scale(0.8, 0.8);
+	}
+	60%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity:1;
+	}
+}
